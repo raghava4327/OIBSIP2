@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Poppins&display=swap');
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root
+{
+    --NAVCOLOR: #DCDCDD;
+
+}
+html{
+    scroll-behavior: smooth;
+    
+}
+h2 
+{
+    text-align: center;
+    font-size: 2rem;
+    margin-top:2em;
+    color:blue;
+   
+font-family: 'Poppins', sans-serif;
+}
+body
+{
+    font-size: 0.7rem;
+    color:#120707;
+    background-color:#fefeff;
+    font-family: 'DM Sans', sans-serif;
+}
+
+header
+{
+    display:flex;
+    justify-content: space-between;  
+    align-items: center;
+    background-color:var(--NAVCOLOR);
+    padding:1rem;
+    position: sticky;
+    top:0;  
+    font-family: 'poppins';
+}
+
+header h1
+{
+background-color: black;
+color:white;
+border-radius: 5px;
+padding:0.5rem;
+box-shadow: 0px 4px 5px 2px rgba(255, 255, 255, 0.484);
+}
+
+header h1::first-letter
+{
+    background-color: white;
+    color:#120707;
+    font-size:1.5em;
+    padding:0 12px;
+    margin-right:2px;
+    border-radius:100%;
+  
+}
+
+nav ul
+{
+    display:flex;
+    list-style: none;
+}
+nav ul li
+{
+ margin-right:1em;
+ 
+}
+nav ul li a
+{
+white-space: nowrap;
+text-decoration: none;
+color:#120707;
+padding:0.3em;
+cursor: pointer;
+font-size:1.2em;
+font-weight:bold;
+    
+}
+
+li a:focus,li a:hover
+{
+    transition: ease-in-out;
+    transition-timing-function: linear;
+    transition-duration: 0.5s;
+    background-color: black;
+    color:white;
+    box-shadow: 1px 1px 5px 4px rgba(0, 0, 0, 0.3);
+    border-radius:5px;
+    
+}
+
+#home
+{
+    margin:7em 0;
+     display:flex;
+     justify-content: space-evenly;
+    align-items: center;
+    scroll-margin-top: 11em;
+}
+#home p
+{
+background:linear-gradient(#7de2d1,#000);
+-webkit-background-clip:text;
+
+color:#00000025;
+font-size:2rem;
+white-space: nowrap;
+text-align: center;
+font-weight:bold;
+font-family: 'poppins';
+}
+#home p span
+{
+text-transform: uppercase;
+font-weight:bold;
+color:grey;
+font-size:0.45em;
+font-family:'DM sans';
+word-spacing:5px;
+letter-spacing: 2px;
+
+}
+#home figure img
+{
+    border-radius:50%;
+    box-shadow:1px 1px 4px 2px grey;
+    
+}
+#home figure img:hover
+{
+
+}
+
+#aboutme
+{
+    margin-top:2em;
+    display:flex;
+    justify-content: space-evenly;
+    scroll-margin-top: 11em;
+    font-size:2em;
+    
+}
+#aboutme .aboutmecont
+{
+    width:50%;
+    line-height: 1.6;
+    text-align: justify;
+    
+
+}
+#aboutme img
+{
+    border-radius:10%;
+    box-shadow:1px 1px 2px 3px grey;   
+}
+#aboutme p
+{
+    font-size:1rem;
+    
+}
+
+#aboutme table td{
+    
+    list-style-type: none;
+    padding:0.5em;
+    font-size: 1rem;
+    
+}
+#aboutme table .sh
+{
+    font-weight: bold;
+    font-family: poppins;
+    letter-spacing: 1px;
+}
+.button
+{
+padding:0.75em;
+background-color:#ef745c;
+color:white;
+font:inherit;
+font-weight: bold;
+}
+.button:hover
+{
+   /* background:linear-gradient(to right,#ef745c,#34073d); */
+    color:black;
+    
+}
+#education
+{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size:1.5em;
+    scroll-margin-top: 11em;
+    margin-top:2em;
+}
+#education p
+{
+line-height: 1.8;
+}
+#education p span
+{
+    font-weight: bold;
+    color:slateblue;
+    font-size: 1.3em;
+}
+#education img
+{
+    margin-left:20px;
+    border:1px solid grey;
+    box-shadow:1px 1px 10px 1px;
+}
+#skills
+{  
+  
+    margin-top:50px;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 20px;
+    margin:20px;
+    grid-auto-rows: minmax(300px,auto);
+    scroll-margin-top: 15em;
+}
+h3{
+    text-align:center;
+    font-size: medium;
+}
+.courses
+{ 
+    
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    
+      color:white;
+      border:1px solid black;
+    background-color: rgba(21, 21, 97, 0.404); 
+
+}
+.courseandpercent
+{
+    display:flex;
+    justify-content:space-between;
+    margin:0px 20px 0px 20px;
+}
+.courses p{
+display:flex;
+flex-direction: row;
+font-size: 1rem;
+}
+
+.progressbar
+{
+   
+    min-height:20px;
+    background-color: black;
+    margin:8px;
+    
+    border-radius:10px;
+
+}
+.progressbar .percent
+{
+
+    width:80%;
+    min-height: 20px;
+    border-radius:10px;
+    background-color: white;;
+}
+.progressbar .percent1
+{
+
+    width:70%;
+    min-height: 20px;
+    border-radius:10px;
+    background-color: white;;
+}
+.progressbar .percent2
+{
+
+    width:70%;
+    min-height: 20px;
+    border-radius:10px;
+    background-color: white;;
+}
+.courses h3
+{
+    width:100%;
+}
+.courses:nth-child(2)
+{
+    display: flex;
+   flex-direction: row;
+}
+.circularbars
+{
+    width:9rem;
+    height:9rem;
+    background-color:white;
+    border-radius:50%;
+    margin:1.5rem;
+    border:1.2rem solid black;
+    border-left-color: #7de2d1 ;
+    border-right-color:#7de2d1;
+    border-top-color:#7de2d1 ;
+    display: block;
+
+}
+.circularbars:nth-child(3)
+{
+    border-left-color: #7de2d1 ;
+    border-top-color:#7de2d1;
+    border-right-color:black ;
+}
+.circularbars .percent
+{
+    text-align:center;
+    color:black;
+    margin-top: 40%;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.circularbars .name
+{
+    text-align:center;
+    color:black;
+    margin-top: 70%;
+    font-size: 1rem;
+    font-weight: bold;
+    
+}
+#acheivements
+{
+    display:flex;
+    justify-content: space-evenly;
+    scroll-margin-top: 11em;
+    font-size:1rem;
+}
+.certificates,.participations
+{
+    width:40%;
+    text-align:center;
+}
+
+
+.cert 
+{
+ min-height: 150px;
+   display:flex;
+   justify-content: space-between;
+   align-items: center;
+   border:0.1px solid black;
+   border-radius: 5px;
+   padding:20px;
+   margin:20px;
+}
+#contact
+{
+    display:flex;
+    justify-content: space-evenly;
+    margin-top:20px;
+}
+.contactdata
+{
+    display:flex;
+    align-items: center;
+    line-height: 2;
+    font-size: 1.5em;
+    column-gap: 10px;
+
+}
+
+.contacttitles p 
+{
+    font-weight:bold;
+    font-family: poppins;
+}
+footer
+{
+    display:flex;
+    justify-content: center;
+    font-size: 1rem;
+    min-height:50px;
+    align-items: center;
+    font-weight: bold;
+    background-color: aliceblue;
+  font-family: poppins;
+
+}
